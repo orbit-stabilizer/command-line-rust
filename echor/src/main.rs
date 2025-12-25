@@ -1,4 +1,4 @@
-use clap::{Arg, ArgAction, Command, Parser};
+use clap::{Parser};
 
 #[derive(Debug, Parser)]
 #[command(author, version, about)]
@@ -20,4 +20,5 @@ fn main() {
         args.text.join(" "),
         if args.omit_newline { "" } else { "\n" }
     );
+
 }
